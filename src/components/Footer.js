@@ -13,7 +13,7 @@
 
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import { FaGithub, FaLinkedin, FaTelegram, FaEnvelope, FaHeart } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaTelegram, FaEnvelope } from 'react-icons/fa';
 import './Footer.css';
 
 function Footer() {

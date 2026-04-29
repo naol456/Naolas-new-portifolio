@@ -13,7 +13,6 @@
 
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import { FaGithub, FaLinkedin, FaTelegram, FaEnvelope } from 'react-icons/fa';
 import './Hero.css';
 
 function Hero() {

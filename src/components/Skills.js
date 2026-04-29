@@ -14,12 +14,12 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { 
-  FaReact, FaNodeJs, FaPython, FaDatabase, FaGitAlt, FaDocker,
+  FaReact, FaNodeJs, FaPython, FaGitAlt, FaDocker,
   FaHtml5, FaCss3Alt, FaJs, FaAws 
 } from 'react-icons/fa';
 import { 
-  SiMongodb, SiPostgresql, SiExpress, SiDjango, SiTypescript,
-  SiRedis, SiGraphql, SiTailwindcss
+  SiMongodb, SiPostgresql, SiExpress, SiTypescript,
+  SiGraphql, SiTailwindcss
 } from 'react-icons/si';
 import './Skills.css';
 
