@@ -1,0 +1,58 @@
+.navbar-custom {
+  background: transparent;
+  padding: 20px 0;
+  transition: all 0.3s ease;
+}
+
+.navbar-custom.scrolled {
+  background: rgba(15, 12, 41, 0.95);
+  backdrop-filter: blur(10px);
+  padding: 15px 0;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+.brand-name {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.navbar-custom .nav-link {
+  color: #fff !important;
+  margin: 0 15px;
+  font-weight: 500;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.navbar-custom .nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #6c63ff, #ff6584);
+  transition: width 0.3s ease;
+}
+
+.navbar-custom .nav-link:hover::after {
+  width: 100%;
+}
+
+.navbar-custom .nav-link:hover {
+  color: #6c63ff !important;
+}
+
+.navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.8%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+@media (max-width: 991px) {
+  .navbar-custom .nav-link {
+    margin: 10px 0;
+  }
+}

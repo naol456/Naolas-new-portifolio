@@ -1,0 +1,102 @@
+.App {
+  background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+  min-height: 100vh;
+  color: #fff;
+}
+
+section {
+  padding: 80px 0;
+  position: relative;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 60px;
+  position: relative;
+  color: #fff;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #6c63ff, #ff6584);
+  border-radius: 2px;
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, #6c63ff, #ff6584);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.btn-primary-custom {
+  background: linear-gradient(135deg, #6c63ff, #5a52d5);
+  border: none;
+  padding: 12px 35px;
+  font-weight: 600;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-primary-custom:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(108, 99, 255, 0.4);
+  color: #fff;
+}
+
+.btn-outline-custom {
+  border: 2px solid #6c63ff;
+  color: #6c63ff;
+  padding: 12px 35px;
+  font-weight: 600;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  background: transparent;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-outline-custom:hover {
+  background: #6c63ff;
+  color: #fff;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(108, 99, 255, 0.4);
+}
+
+.card-custom {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 30px;
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.card-custom:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  border-color: rgba(108, 99, 255, 0.5);
+}
+
+@media (max-width: 768px) {
+  section {
+    padding: 60px 0;
+  }
+
+  .section-title {
+    font-size: 2rem;
+    margin-bottom: 40px;
+  }
+}
